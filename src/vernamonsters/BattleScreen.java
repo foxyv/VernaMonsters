@@ -75,17 +75,14 @@ public class BattleScreen extends JFrame {
             backgroundPanel = new ImagePanel(BackGround);
             backgroundPanel.setBounds(this.getBounds());
 
-            YourBattlePanel rawr = new YourBattlePanel();
-            rawr.setBounds(this.getBounds());
-            rawr.setOpaque(true);
+
             
-            //this.add(rawr);
             this.add(backgroundPanel);
-            backgroundPanel.setVisible(true);
 
             //add listeners
             this.addWindowListener(BattleWindowListener);
             this.addComponentListener(BattleComponentListener);
+            repaint();
 
 
 
@@ -115,12 +112,13 @@ public class BattleScreen extends JFrame {
 
     @Override
     public void paint(Graphics g) {
-
         super.paintComponents(g);
         
         
 
     }
+
+    // <editor-fold defaultstate="collapsed" desc="Listener Implementations">
     WindowListener BattleWindowListener = new WindowListener() {
 
         public void windowOpened(WindowEvent e) {
@@ -165,4 +163,4 @@ public class BattleScreen extends JFrame {
         public void componentHidden(ComponentEvent e) {
         }
     };
-}
+}// </editor-fold>
