@@ -14,6 +14,7 @@ public class MainGameThread extends Thread {
 
     @Override
     public void run(){
+            
            BattleScreen rawr = new BattleScreen();
     }
 }

@@ -28,6 +28,7 @@ public class ImagePanel extends JPanel {
 
     public ImagePanel(Image imageForPanel) {
         super();
+        this.setOpaque(false);
         this.imageForPanel = imageForPanel;
         repaint();
 
@@ -36,8 +37,9 @@ public class ImagePanel extends JPanel {
 
     @Override
     public void paint(Graphics g) {
-        super.paint(g);
         g.drawImage(imageForPanel, 0, 0,(int)this.getBounds().getWidth(),(int)this.getBounds().getHeight(), this.getRootPane());
+        super.paint(g);
+
     }
 
 
