@@ -12,7 +12,7 @@ import java.awt.Rectangle;
 import javax.swing.JPanel;
 
 /**
- *
+ * A basic healthbar in a JPanel.
  * @author Sweord
  */
 public class HealthBar extends JPanel{

@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 
 /**
- *
+ * A way to load and hold resources like Images.
  * @author Sweord
  */
 public class ResourceMap {

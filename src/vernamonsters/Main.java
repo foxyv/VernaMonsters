@@ -6,7 +6,7 @@
 package vernamonsters;
 
 /**
- *
+ * The Main class which is called when the game is loaded.
  * @author Sweord
  */
 public class Main {
